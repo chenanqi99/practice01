@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>京东轮播图</title>
+        <style>
+            .c{
+                width: 530px;
+                height: 425px;
+                margin-top: 200px;
+                margin-left: 300px;
+                position: relative;  /*使那些点的位置使相对于容器，而不是初始位置*/
+            }
+            .c1{
+                position: absolute;
+                z-index: 8;
+            }
+            .c2{
+                position: absolute;
+                z-index: 7;
+            }
+            .c3{
+                position: absolute;
+                z-index: 6;
+            }
+            .c4{
+                position: absolute;
+                z-index: 5;
+            }
+            .c5{
+                position: absolute;
+                z-index: 4;
+            }
+            .c6{
+                position: absolute;
+                z-index: 3;
+            }
+            .c7{
+                position: absolute;
+                z-index: 2;
+            }
+            .c8{
+                position: absolute;
+                z-index: 1;
+            }
+            /* 设置导航点的样式 */
+            .d{
+                position: absolute;
+                z-index: 999;
+                bottom: 0px;
+                left: 20px;
+            }
+            .d a{
+                float: left;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;    /*变成圆点*/
+                margin-left: 4px;
+                background-color: rgba(255, 255, 255, 0.6);
+                border: 2px transparent;  /*将边框设置为透明*/
+            }
+        /* 鼠标移入以及点击时会变成的样子 */
+        /* .d a.active, */
+           .d a:hover{
+                background-color: #000;
+                border: 2px rgba(255, 255, 255, 0.6);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="c">
+            <div class="c1">
+                <a href="https://prodev.jd.com/mall/active/S3QUuShiWbciWDsoubQtG29Ejn5/index.html?babelChannel=ttt224&extension_id=eyJhZCI6IiIsImNoIjoiIiwic2hvcCI6IiIsInNrdSI6IiIsInRzIjoiIiwidW5pcWlkIjoie1wiY2xpY2tfaWRcIjpcIjdlMWM2ODQwLTg5MTktNDNlZS04N2ZjLTBmOWFkNjJhMGNlZVwiLFwibWF0ZXJpYWxfaWRcIjpcIjYyMzY5OTI5NjBcIixcInBvc19pZFwiOlwiNDI3MlwiLFwic2lkXCI6XCJkYzVmZmFkNC02MmVhLTQ5YzMtODJkMy03Y2E3YmZhMTc5ZDFcIn0ifQ==&jd_pop=7e1c6840-8919-43ee-87fc-0f9ad62a0cee&abt=2">
+                    <img src="..\resource\1jd.jpg.webp">
+                </a>
+            </div>
+            <div class="c2">
+                <a href="https://prodev.jd.com/mall/active/S3QUuShiWbciWDsoubQtG29Ejn5/index.html?babelChannel=ttt224&extension_id=eyJhZCI6IiIsImNoIjoiIiwic2hvcCI6IiIsInNrdSI6IiIsInRzIjoiIiwidW5pcWlkIjoie1wiY2xpY2tfaWRcIjpcIjdlMWM2ODQwLTg5MTktNDNlZS04N2ZjLTBmOWFkNjJhMGNlZVwiLFwibWF0ZXJpYWxfaWRcIjpcIjYyMzY5OTI5NjBcIixcInBvc19pZFwiOlwiNDI3MlwiLFwic2lkXCI6XCJkYzVmZmFkNC02MmVhLTQ5YzMtODJkMy03Y2E3YmZhMTc5ZDFcIn0ifQ==&jd_pop=7e1c6840-8919-43ee-87fc-0f9ad62a0cee&abt=2">
+                    <img src="..\resource\2jd.jpg.webp">
+                </a>
+            </div>
+            <div class="c3">
+                <a href="https://prodev.jd.com/mall/active/S3QUuShiWbciWDsoubQtG29Ejn5/index.html?babelChannel=ttt224&extension_id=eyJhZCI6IiIsImNoIjoiIiwic2hvcCI6IiIsInNrdSI6IiIsInRzIjoiIiwidW5pcWlkIjoie1wiY2xpY2tfaWRcIjpcIjdlMWM2ODQwLTg5MTktNDNlZS04N2ZjLTBmOWFkNjJhMGNlZVwiLFwibWF0ZXJpYWxfaWRcIjpcIjYyMzY5OTI5NjBcIixcInBvc19pZFwiOlwiNDI3MlwiLFwic2lkXCI6XCJkYzVmZmFkNC02MmVhLTQ5YzMtODJkMy03Y2E3YmZhMTc5ZDFcIn0ifQ==&jd_pop=7e1c6840-8919-43ee-87fc-0f9ad62a0cee&abt=2">
+                    <img src="..\resource\3jd.jpg.webp">
+                </a>
+            </div>
+            <div class="c4">
+                <a href="https://prodev.jd.com/mall/active/S3QUuShiWbciWDsoubQtG29Ejn5/index.html?babelChannel=ttt224&extension_id=eyJhZCI6IiIsImNoIjoiIiwic2hvcCI6IiIsInNrdSI6IiIsInRzIjoiIiwidW5pcWlkIjoie1wiY2xpY2tfaWRcIjpcIjdlMWM2ODQwLTg5MTktNDNlZS04N2ZjLTBmOWFkNjJhMGNlZVwiLFwibWF0ZXJpYWxfaWRcIjpcIjYyMzY5OTI5NjBcIixcInBvc19pZFwiOlwiNDI3MlwiLFwic2lkXCI6XCJkYzVmZmFkNC02MmVhLTQ5YzMtODJkMy03Y2E3YmZhMTc5ZDFcIn0ifQ==&jd_pop=7e1c6840-8919-43ee-87fc-0f9ad62a0cee&abt=2">
+                    <img src="..\resource\4jd.jpg">
+                </a>
+            </div>
+            <div class="c5">
+                <a href="https://prodev.jd.com/mall/active/S3QUuShiWbciWDsoubQtG29Ejn5/index.html?babelChannel=ttt224&extension_id=eyJhZCI6IiIsImNoIjoiIiwic2hvcCI6IiIsInNrdSI6IiIsInRzIjoiIiwidW5pcWlkIjoie1wiY2xpY2tfaWRcIjpcIjdlMWM2ODQwLTg5MTktNDNlZS04N2ZjLTBmOWFkNjJhMGNlZVwiLFwibWF0ZXJpYWxfaWRcIjpcIjYyMzY5OTI5NjBcIixcInBvc19pZFwiOlwiNDI3MlwiLFwic2lkXCI6XCJkYzVmZmFkNC02MmVhLTQ5YzMtODJkMy03Y2E3YmZhMTc5ZDFcIn0ifQ==&jd_pop=7e1c6840-8919-43ee-87fc-0f9ad62a0cee&abt=2">
+                    <img src="..\resource\5jd.jpg.webp">
+                </a>
+            </div>
+            <div class="c6">
+                <a href="https://prodev.jd.com/mall/active/S3QUuShiWbciWDsoubQtG29Ejn5/index.html?babelChannel=ttt224&extension_id=eyJhZCI6IiIsImNoIjoiIiwic2hvcCI6IiIsInNrdSI6IiIsInRzIjoiIiwidW5pcWlkIjoie1wiY2xpY2tfaWRcIjpcIjdlMWM2ODQwLTg5MTktNDNlZS04N2ZjLTBmOWFkNjJhMGNlZVwiLFwibWF0ZXJpYWxfaWRcIjpcIjYyMzY5OTI5NjBcIixcInBvc19pZFwiOlwiNDI3MlwiLFwic2lkXCI6XCJkYzVmZmFkNC02MmVhLTQ5YzMtODJkMy03Y2E3YmZhMTc5ZDFcIn0ifQ==&jd_pop=7e1c6840-8919-43ee-87fc-0f9ad62a0cee&abt=2">
+                    <img src="..\resource\6jd.jpg">
+                </a>
+            </div>
+            <div class="c7">
+                <a href="https://prodev.jd.com/mall/active/S3QUuShiWbciWDsoubQtG29Ejn5/index.html?babelChannel=ttt224&extension_id=eyJhZCI6IiIsImNoIjoiIiwic2hvcCI6IiIsInNrdSI6IiIsInRzIjoiIiwidW5pcWlkIjoie1wiY2xpY2tfaWRcIjpcIjdlMWM2ODQwLTg5MTktNDNlZS04N2ZjLTBmOWFkNjJhMGNlZVwiLFwibWF0ZXJpYWxfaWRcIjpcIjYyMzY5OTI5NjBcIixcInBvc19pZFwiOlwiNDI3MlwiLFwic2lkXCI6XCJkYzVmZmFkNC02MmVhLTQ5YzMtODJkMy03Y2E3YmZhMTc5ZDFcIn0ifQ==&jd_pop=7e1c6840-8919-43ee-87fc-0f9ad62a0cee&abt=2">
+                    <img src="..\resource\7jd.jpg.webp">
+                </a>
+            </div>
+            <div class="c8">
+                <a href="https://prodev.jd.com/mall/active/S3QUuShiWbciWDsoubQtG29Ejn5/index.html?babelChannel=ttt224&extension_id=eyJhZCI6IiIsImNoIjoiIiwic2hvcCI6IiIsInNrdSI6IiIsInRzIjoiIiwidW5pcWlkIjoie1wiY2xpY2tfaWRcIjpcIjdlMWM2ODQwLTg5MTktNDNlZS04N2ZjLTBmOWFkNjJhMGNlZVwiLFwibWF0ZXJpYWxfaWRcIjpcIjYyMzY5OTI5NjBcIixcInBvc19pZFwiOlwiNDI3MlwiLFwic2lkXCI6XCJkYzVmZmFkNC02MmVhLTQ5YzMtODJkMy03Y2E3YmZhMTc5ZDFcIn0ifQ==&jd_pop=7e1c6840-8919-43ee-87fc-0f9ad62a0cee&abt=2">
+                    <img src="..\resource\8jd.jpg">
+                </a>
+            </div>
+            <div class="d">
+                <a class="active" href="javascript:;"></a>
+                <a class="active" href="javascript:;"></a>
+                <a class="active" href="javascript:;"></a>
+                <a class="active" href="javascript:;"></a>
+                <a class="active" href="javascript:;"></a>
+                <a class="active" href="javascript:;"></a>
+                <a class="active" href="javascript:;"></a>
+                <a class="active" href="javascript:;"></a>
+            </div>
+        </div>
+    </body>
+</html>

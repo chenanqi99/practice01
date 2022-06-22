@@ -1,0 +1,271 @@
+
+/* 给页面设置底部背景颜色 */
+body{
+    background-color: #f7f7f8;
+    /* background-color: red; */
+}
+a{
+    text-decoration: none;
+}
+/* 公共字体颜色 */
+.red{
+    color: #cf4444;
+}
+.pannel{
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+/* 主题内容 */
+.main{
+    
+    /* 为了底部导航不被内容区覆盖，所以设置底部padding80*/
+    padding: 12px 11px 80px;
+    
+}
+.main .title{
+    display: flex;
+    margin: 10px 0;
+}
+h1{
+    font-size: 18px;
+    margin-left: 130px;
+}
+
+/* 用户信息 */
+.user_msg{
+    padding: 15px 0px 15px 11px;
+    display: flex;
+    /* 辅轴对齐 */
+    align-items: center;
+}
+
+
+.main .location{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg,
+        #6fc2aa 5%,
+        #54b196 100%
+    );
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+
+.user_msg .user{
+    flex: 1;
+}
+.user_msg .user .top{
+    width: 147px;
+    height: 14px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.user_msg .user .top h5{
+    width: 55px;
+    font-size: 16px;
+}
+.user_msg .user .top span{
+    font-size: 12px;
+}
+
+.user_msg .user .bottom{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+.main .more{
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    color: #999;
+}
+
+/* 商品区域 */
+.goods{
+    padding: 11px 0 11px 11px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.goods .pic{
+    width: 85px;
+    height: 85px;
+}
+.goods .pic img{
+    width: 100%;
+}
+
+.goods .info{
+    margin-left: 12px;
+    width: 204px;
+
+}
+
+.goods .info .top{
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #262626;
+}
+
+.goods .info .mid{
+    width: 95px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #999;
+    background-color: rgba(0, 0, 0,0.03);
+    margin: 5px 0;
+
+}
+.goods .info .mid span:first-child{
+    margin-right: 5px;
+}
+.goods .info .bott{
+    margin-top: 10px;
+    font-size: 10px;
+}
+.goods .info .bott{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.goods .info .bott .s1{
+    text-decoration: line-through;     /*删除线*/
+    color: #afadad;
+}
+.goods .info .bott .i1{
+    font-size: 16px;
+}
+
+.goods .info .bott .i2{
+    font-size: 12px;
+}
+
+.goods .count{
+    width: 44px;
+    height: 44px;
+    padding: 0 auto;
+    line-height: 44px;
+}
+
+.goods .count i{
+    margin-left: 10px;
+}
+.goods .count span{
+    font-size: 18px;
+
+}
+
+
+
+
+/* 物流信息 */
+.others{
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 13px;
+    color: #262626;
+    line-height: 21px;
+}
+
+.others .trans{
+    display: flex;
+    justify-content: space-between;
+}
+
+.others .remark .content{
+    font-size: 12px;
+    color: #989898;
+    margin-left: 20px;
+}
+
+.others .payway{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* 商品价格 */
+.price{
+    padding: 15px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #262626;
+}
+
+.price .total{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+.price .transpri{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.price .discount{
+    display: flex;
+    justify-content: space-between;
+}
+/* 主题内容 */
+/* 底部支付 */
+.pay{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content:space-between;     /*主轴*/
+    align-items: center;       /*辅轴*/
+
+    width: 357px;
+    height: 80px;
+
+    padding: 0 11px;
+    /* background-color: aqua; */
+    border-top: 1px solid #ededed;
+}
+
+.pay .left{
+    font-size: 12px;
+}
+.pay i{
+    font-size: 20px;
+}
+.pay .right{
+    width: 90px;
+    height: 35px;
+    /* 背景颜色进行渐变 */
+    background-image: linear-gradient(90deg,
+    #6fc2aa 5%,
+    #54b196 100%
+    );
+    border-radius: 3px;
+}
+.pay a{
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-size: 13px;
+
+}
+/* 底部支付 */

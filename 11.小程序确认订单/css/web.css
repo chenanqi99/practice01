@@ -1,0 +1,640 @@
+/* 公共样式 */
+body{
+    background-color:#f6f6f6 ;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+    display:inline-block;
+    font-size: 16px;
+}
+.width{
+    width: 1240px;
+    margin: 0 auto;
+}
+/* 红色字体颜色 */
+.red{
+    color: #9a2e1f;
+}
+
+/* 顶部导航条 */
+.top-wrapper{
+    background-color: white; 
+   
+}
+.top{
+    height: 130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+.top img{
+    width:207px;
+    height: 70px;
+}
+.top ul{
+    display: inline-flex;
+    justify-content:space-around;
+    width: 968px;     /*里面没有宽度，无法撑开父元素*/
+    height: 33px;
+    margin-left: 40px;
+}                         
+.top ul>li{
+    display: inline-block;
+    line-height: 33px;
+}
+
+
+/* 搜索样式 */
+.top .search{
+    width: 172px;
+    box-shadow: 0 2px 0  rgba(0, 0, 0, 0.05) ;
+    display: flex;
+    justify-content: space-between;
+}
+.top .search button{
+    background-color: white;
+    border: none;
+    width: 28px;
+    
+}
+.top .search #i1{
+    font-size: 18px;
+    color: #333333;
+    line-height: 33px;
+    text-align: center;
+
+}
+.top .search input{
+    font-size: 14px;
+    line-height: 33px;
+    width:144px;
+    color: #cccccc;
+    outline: none;   /*outline得去掉后面的样式才能生效*/
+    border: none;
+}
+/* 点击搜索框时样式 */
+.top .search input:focus{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* 设置购物车样式 */
+.cart{
+    margin-left: 5px;
+    font-size: 23px;
+    color: #333333;
+}
+
+/* 中间区域 */
+.mid-wrap{
+    margin-top: 20px;
+    display: flex;
+}
+
+
+/* 左侧导航列表 */
+/* 设置分割线 */
+.div{
+    height: 2px;
+    background-color: #f4f4f4;
+}
+
+
+
+.left-wrap{
+    width: 224px;
+    height: 1120px;
+    background-color: #fff;
+
+}
+
+/* 设置标题样式 */
+h3{
+    margin: 20px auto 30px 53px;
+
+}
+.left-wrap .hfir{
+    padding-top: 40px;
+}
+.left-wrap a{
+    font-size: 14px ;
+}
+
+.left-wrap li{
+    padding-bottom: 25px;
+    padding-left: 53px;
+}
+.left-wrap .last-li{
+    padding-bottom: 0;
+}
+
+
+/* 中间内容区 */
+.content{
+    margin-left: 20px;
+    /* background-color: pink; */
+    width: 996px;
+    display: flex;
+    flex-direction: column;
+}
+/* 设置背景图片为半透明,但文本不透明 */
+.pic{
+    /* width: 1033px; */
+    width: 996px;
+    height: 132px;
+    background-image: url("../uploads/banner_1.png");
+    opacity: 0.4;
+    position: absolute;
+}
+
+/* 顶部个人信息 */
+.myinfo{
+    
+    position: relative;
+    top: 0;
+    height: 132px;
+    display: flex;
+    align-items:center;
+    background-color: rgba(39, 186, 156, 0.8);
+}
+
+/* 姓名和头像 */
+.myinfo .name{
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+/* 头像 */
+.myinfo img{
+    width: 85px;
+    height: 85px;
+    margin-left: 60px;
+    margin-right: 25px;
+}
+
+/* 会员中心 */
+.myinfo .mem,
+.myinfo .safe,
+.myinfo .pos{
+    width: 64px;
+    height: 61px;
+    margin-left: 314px;
+    text-align: center;
+}
+.myinfo  i{
+    color: white;
+    font-size: 32px;
+   
+}
+.myinfo  p{
+    color: white;
+    margin-top: 10px;
+    line-height: 15px;
+    font-size:16px ;
+}
+
+.myinfo .safe,
+.myinfo .pos
+{
+    margin-left: 107px;
+}
+
+ 
+
+/* 我的订单信息 */
+
+
+.myorder{
+    width: 970px;
+    height: 334px;
+    margin-top: 20px;
+    padding: 20px 13px;
+    background-color: #fff;
+}
+
+/* 标题 */
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    color: #333333;
+    font-size: 19px;
+}
+.more{
+    color: #999999;
+    font-size: 16px;
+}
+
+/* 第一个商品 */
+.good1{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: 137px;
+    margin-top: 20px;
+    border: 1px solid  #e8e8e8;
+    
+}
+/* 第一部分 */
+.s1{
+    width: 591px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* padding-right:80px ; */
+}
+
+/* 设置图片 */
+.good1 img{
+    width: 107px;
+    height: 107px;
+    margin-left: 13px;
+    margin-right:10px ;
+}
+/* .s1>span{
+    margin-right: 127px;
+} */
+.s1>span .p1{
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.s1>span .p2{
+    color: #999999;
+    font-size: 14px;
+}
+.s1 .p{
+    display: block;
+    position: absolute;
+    right: 70px;
+    width: 56px;
+    font-size: 14px;
+    color: #e05e30;
+    text-align: center;
+}
+
+/* 设置查看物流 */
+.s1 .p>a{
+    color: #999999;
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* 中间边框 */
+.border{
+    height: 100%;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+
+}
+/* 价格 */
+.s2{
+    width: 196px;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+}
+.s2>p{
+    margin-bottom: 10px;
+}
+.s2>p:last-child{
+    margin-bottom: 0;
+}
+/* 付款 */
+.s3{
+    width: 180px;
+    font-size: 14px;
+    text-align: center;
+    
+}
+.s3>a{
+    display: block;
+    margin-top: 10px;
+}
+/* 按钮 */
+.s3 .btn{
+    width: 100px;
+    height: 31px;
+    background-color: #27ba9b;
+    border-radius: 2px;
+    border: none;
+    
+}
+.s3 .btn>a{
+    color: white;
+    font-size: 14px;
+}
+
+
+
+/* 我的收藏 */
+.mycollect,
+.myfoot{
+    background-color: #fff;
+    height: 320px;
+    padding: 22px 11px;
+    margin-top: 20px;
+}
+
+/* 分割线 */
+.line{
+    height: 1px;
+    background-color: #e8e8e8;
+    margin-top: 18px;
+}
+
+.colgood{
+    /* background-color: #fff; */
+    height: 304px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+.colgood div>img{
+    width: 154px;
+    height: 154px;
+    margin-bottom: 27px;
+}
+
+.colgood .c1 span>p,
+.colgood .c2 span>p,
+.colgood .c3 span>p,
+.colgood .c4 span>p{
+    /* margin-top: 27px; */
+    color: #333333;
+    font-size: 16px;
+}
+
+/* 价格样式 */
+.colgood >div .pric{
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.colgood >div .pric i{
+    font-size: 18px;
+}
+
+
+/* 底部信息 */
+.bottom{
+    background-color: #fff;
+    height: 270px;
+    padding-left: 385px;
+    padding-right: 405px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+/* 图标文本共同样式 */
+.astyle{
+    width: 92px;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid #eeeeee ;
+}
+
+/* 图标共同样式 */
+.icon{
+    width: 30px;
+    height: 30px;
+    margin-top:22px;
+}
+/* 公共的p字体样式 */
+.bp{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999999;
+}
+.serve{
+    display: flex;
+
+}
+
+
+/* 标题样式 */
+h5{
+    font-size: 16px;
+    color: #999999;
+    text-align: center;
+}
+
+.bottom .b1>h5,
+.bottom .b2>h5{
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+
+.bottom .b1{
+    width: 193px;
+    height: 156px;
+    margin-right: 118px;
+}
+
+
+
+/* 设置图标 */
+
+
+.bottom .b1 .pic1{
+    background: url("../images/sprites.png") -249px -67px;
+}
+
+/* 鼠标移入样式 */
+.bottom .b1 a:hover .pic1{
+    background: url("../images/sprites.png") -205px -67px;
+}
+
+
+
+
+.bottom .b1 .pic2{
+    background: url("../images/sprites.png") -349px -67px;
+}
+
+/* 鼠标移入样式 */
+.bottom .b1 a:hover .pic2{
+    background: url("../images/sprites.png") -299px -67px;
+}
+.bottom .b1 a:first-child{
+    margin-right: 5px;
+}
+.bottom .b2 a:first-child{
+    margin-right: 5px;
+}
+
+
+/* 关于我们 */
+.bottom .b2{
+    width: 192px;
+    height: 156px;
+}
+
+.bottom .b2 .pic3{
+    width: 36px;
+    height: 29px;
+    background: url("../images/sprites.png") -249px -15px;
+}
+
+/* 鼠标移入样式 */
+.bottom .b2 a:hover .pic3{
+    background: url("../images/sprites.png") -205px -15px;
+}
+.bottom .b2 .pic4{
+    width: 36px;
+    height: 29px;
+    background: url("../images/sprites.png") -349px -15px;
+}
+
+/* 鼠标移入样式 */
+.bottom .b2 a:hover .pic4{
+    background: url("../images/sprites.png") -299px -15px;
+}
+
+
+
+
+.bottom .b3{
+    height: 150px;
+    margin-left: 93px;
+}
+.bottom .b3 h5{
+    margin-bottom: 31px;
+}
+
+.bottom .b3 .about{
+    background-color: #fff;
+    width: 241px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .b3 span{
+    background-color: #fff;
+    width: 103px;
+    height: 103px;
+}
+.bottom .b3 span>img{
+    width: 103px;
+    height: 103px;
+}
+.bottom .b3 span>p:first-child{
+    margin-top: 13px;
+}
+.bottom .b3 span>p{
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 8px;
+}
+
+.bottom .b3 span>button{
+    margin-top: 10px;
+    background-color: #27ba9b;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+.bl{
+    width: 2px;
+    height: 189px;
+    margin-left: 33px;
+    margin-right: 74px;
+}
+
+
+
+
+.bottom .b4{
+    /* width: 160px; */
+    height: 156px;
+}
+
+.bottom .b4 .num{
+    font-size: 22px;
+    /* font-weight: 900; */
+    margin-top: 58px;
+}
+
+.bottom .b4 .date{
+    font-size: 15px;
+	color: #999999;
+    margin-top: 17px;
+}
+
+
+
+/* 底部黑色背景 */
+.bg{
+    height: 340px;
+    background-color: #333333;
+}
+.bg .tag{
+    height: 170px;
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    color: #ffffff;
+    border-bottom: 3px solid #434343;
+}
+.bg .tag span{
+    display: flex;
+}
+
+.bg .tag .i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    
+}
+
+.bg .tag .i01{
+    background: url('../images/sprites.png');
+}
+
+.bg .tag .i02{
+    background: url('../images/sprites.png') -65px 0;
+}
+.bg .tag .i03{
+    background: url('../images/sprites.png') -130px 0;
+}
+
+.bg .tag span p:last-child{
+    line-height: 60px;
+    margin-left: 19px;
+}
+
+.bg .last{
+    width: 537px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 41px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.bg .last ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.bg .last ul>li>a{
+    color: #999999;
+}
+
+
+
+.bg .last .copy{
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+}

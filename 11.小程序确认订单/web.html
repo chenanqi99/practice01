@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/web.css">
+    <link rel="stylesheet" href="../05.fa/css/all.css">
+</head>
+<body>
+    <!-- 顶部导航条 -->
+    <div class="top-wrapper">
+        <div class="width top">
+            <img src="./images/logo.png" alt="">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">生鲜</a></li>
+                <li><a href="#">美食</a></li>
+                <li><a href="#">餐厨</a></li>
+                <li><a href="#">电器</a></li>
+                <li><a href="#">居家</a></li>
+                <li><a href="#">洗护</a></li>
+                <li><a href="#">孕婴</a></li>
+                <li><a href="#">服装</a></li>
+                <!-- <li class="search">
+                    <button><i class="fas fa-search" id="i1"></i></button>
+                    <input type="text" name="search" value="搜一搜" id="search">
+                </li>
+                <li class="cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li> -->
+                <li class="search">
+                    <button><i class="fas fa-search" id="i1"></i></button>
+                    <input type="text" name="search" value="搜一搜" id="search">
+                    <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <div class="mid-wrap width">
+
+        <!-- 左侧列表 -->
+        <nav class="left-wrap">
+             
+                 <h3 class="hfir">我的账户</h3>
+                 <ul class="count">
+                     <li><a href="#">个人中心</a></li>
+                     <li><a href="#">消息通知</a></li>
+                     <li><a href="#">个人信息</a></li>
+                     <li><a href="#">安全设置</a></li>
+                     <li><a href="#">地址管理</a></li>
+                     <li><a href="#">我的积分</a></li>
+                     <li><a href="#">我的足迹</a></li>
+                     <li><a href="#">邀请有礼</a></li>
+                     <li><a href="#">幸运抽奖</a></li>      
+                 </ul>
+                <div class="div"></div>
+            
+                <h3>交易管理</h3>
+                <ul class="deal">
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">优惠券</a></li>
+                    <li><a href="#">礼品卡</a></li>
+                    <li><a href="#">评价晒单</a></li>
+                    <li><a href="#">售后服务</a></li>    
+                </ul>
+             
+                <div class="div"></div>
+                <h3>我的收藏</h3>
+                <ul class="collect">
+                    <li><a href="#">收藏的商品</a></li>
+                    <li><a href="#">收藏的专题</a></li>
+                    <li><a href="#">关注的品牌</a></li>
+                </ul>
+             
+                <div class="div"></div>
+                <h3>帮助中心</h3>
+                <ul class="help">
+                    <li><a href="#">帮助中心</a></li>
+                    <li class="last-li"><a href="#">在线客服</a></li>                      
+                </ul>          
+            
+        </nav>
+
+         <!-- 中间内容区 -->
+        <div class="content">
+            <!-- 个人信息 -->
+            <div class="pic">
+
+            </div>
+            <div class="myinfo">
+                <span class="name">
+                    <img src="./uploads/avatar_1.png" alt="">
+                    <span>张小花</span>
+                </span>
+                <span class="mem">
+                    <a href="#">
+                        <i class="fas fa-user-circle"></i>
+                        <p >会员中心</p>
+                    </a>
+                </span>
+                <span class="safe">
+                    <a href="#">
+                        <i class="fas fa-cog "></i>
+                        <p >安全设置</p>
+                    </a>
+                </span>
+                <span class="pos">
+                    <a href="#">
+                        <i class="fas fa-map-marker-alt "></i>
+                        <p >地址管理</p>
+                    </a>
+                </span>
+            </div>
+
+            <!-- 我的订单信息 -->
+            <div class="myorder">
+                <div class="title">
+                    <h2>我的订单</h2>
+                    <span class="more">
+                        查看全部
+                        <i class="fas fa-angle-right"></i>
+                    </span>
+                </div>
+                <div class="good1">
+                    <span class="s1">
+                        <img src="./uploads/history_goods_1.jpg" alt="">
+                        <span>
+                            <p class="p1">拉夫劳伦t恤男正品圆领短袖...</p>
+                            <p class="p2">颜色：白色  尺码：M  数量：1</p>
+                        </span>
+                        <p class="p">待付款</p> 
+                    </span>
+                    <span class="border"></span>
+                    <span class="s2">
+                        <p class="red">￥99.00</p>
+                        <p>(含运费：¥10.00元)</p>
+                        <p>在线支付</p>
+
+                    </span>
+                    <span class="border"></span>
+                    <span class="s3">
+                        <button class="btn"><a href="#">立即支付</a></button>
+                        <a href="#">查看详情</a></p>
+                        <a href="#">取消订单</a>
+                    </span>
+                </div>
+
+                <!-- 第二个商品 -->
+                <div class="good1">
+                    <span class="s1">
+                        <img src="./uploads/history_goods_2.jpg" alt="">
+                        <span>
+                            <p class="p1">李宁跑步鞋男鞋空气弧...</p>
+                            <p class="p2">颜色：灰色  尺码：42  数量：1</p>
+                        </span>
+                        <p class="p">
+                            待付款
+                            <a href="#" class="trans">查看物流</a>
+                        </p>
+                    </span>
+                    <span class="border"></span>
+                    <span class="s2">
+                        <p class="red">￥199.00</p>
+                        <p>(含运费：¥10.00元)</p>
+                        <p>在线支付</p>
+
+                    </span>
+                    <span class="border"></span>
+                    <span class="s3">
+                        <button class="btn"><a href="#">确认收货</a></button>
+                        <a href="#">查看详情</a></p>
+                        <a href="#">再次购买</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- 我的收藏 -->
+            <div class="mycollect">
+                <h2>我的收藏</h2>
+                <div class="line"></div>
+                <div class="colgood">
+                    <div class="c1">
+                        <img src="./uploads/collect_goods_1.jpg" alt="">
+                        <span>
+                            <p>沙宣经典洗护套装</p>
+                            <p>750ml送200ml</p>
+                            <p>洗护用品</p>
+                        </span>
+                        <span class="pric red">￥<i>79</i></span>
+                    </div>
+                    <div class="c2">
+                        <img src="./uploads/collect_goods_2.jpg" alt="">
+                        <span>
+                            <p>红功夫 麻辣小龙虾1.5kg</p>
+                            <p> 4-6钱/25-32只</p>
+                            <p>火锅食材</p>
+                        </span>
+                        <span class="pric red">￥<i>79</i></span>
+                    </div>
+                    <div class="c3">
+                        <img src="./uploads/collect_goods_3.jpg" alt="">
+                        <span>
+                            <p>三都港 冷冻无公害黄花鱼</p>
+                            <p> 700g 2条 袋装</p>
+                            <p>海鲜水产</p>
+                        </span>
+                        <span class="pric red">￥<i>49</i></span>
+                    </div>
+                    <div class="c4">
+                        <img src="./uploads/collect_goods_4.jpg" alt="">
+                        <span>
+                            <p>渔公码头 大连鲜食入味</p>
+                            <p> 即食海参 辽参刺参</p>
+                            <p>调味海</p>
+                        </span>
+                        <span class="pric red">￥<i>899</i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 我的足迹 -->
+            <div class="myfoot">
+                <h2>我的足迹</h2>
+                <div class="line"></div>
+                <div class="colgood">
+                    <div class="c1">
+                        <img src="./uploads/history_goods_1.jpg" alt="">
+                        <span>
+                            <p>沙宣经典洗护套装</p>
+                            <p>750ml送200ml</p>
+                            <p>洗护用品</p>
+                        </span>
+                        <span class="pric red">￥<i>79</i></span>
+                    </div>
+                    <div class="c2">
+                        <img src="./uploads/history_goods_2.jpg" alt="">
+                        <span>
+                            <p>红功夫 麻辣小龙虾1.5kg</p>
+                            <p> 4-6钱/25-32只</p>
+                            <p>火锅食材</p>
+                        </span>
+                        <span class="pric red">￥<i>79</i></span>
+                    </div>
+                    <div class="c3">
+                        <img src="./uploads/history_goods_3.jpg" alt="">
+                        <span>
+                            <p>三都港 冷冻无公害黄花鱼</p>
+                            <p> 700g 2条 袋装</p>
+                            <p>海鲜水产</p>
+                        </span>
+                        <span class="pric red">￥<i>49</i></span>
+                    </div>
+                    <div class="c4">
+                        <img src="./uploads/history_goods_4.jpg" alt="">
+                        <span>
+                            <p>渔公码头 大连鲜食入味</p>
+                            <p> 即食海参 辽参刺参</p>
+                            <p>调味海</p>
+                        </span>
+                        <span class="pric red">￥<i>899</i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="b1">
+            <h5>客户服务</h5>
+            <div class="serve">
+                <a href="#" class="astyle">
+                    <p class="pic1 icon"></p>
+                    <p class="bp">在线客服</p>
+                </a>
+                <a href="#" class="astyle">
+                    <p class="pic2 icon"></p>
+                    <p class="bp">问题反馈</p>
+                </a>
+            </div>
+        </div>
+        <div class="b2">
+            <h5>关于我们</h5>
+            <div class="serve">
+                <a href="#" class="astyle">
+                    <p class="pic3 icon"></p>
+                    <p class="bp">公众号</p>
+                </a>
+                <a href="#" class="astyle">
+                    <p class="pic4 icon"></p>
+                    <p class="bp">微博</p>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="b3">
+            <h5>下载APP</h5>
+            <div class="about">
+                <span><img src="./uploads/qrcode.png" alt=""></span>
+                <span>
+                    <p>扫描二维码</p>
+                    <p>立马下载APP</p>
+                    <button>下载页面</button>
+                </span>
+            </div>
+        </div>
+
+
+        <div class="bl"></div>
+
+
+        <div class="b4">
+            <h5>服务热线</h5>
+            <span>
+                <p class="num">400-0000-000</p>
+                <p class="date">周一至周日 8:00-18:00</p>
+            </span>
+        </div>
+    </div>
+
+
+    <nav class="bg">
+        <div class="tag">
+            <span>
+                <p class="i i01"></p>
+                <p>价格亲民</p>
+            </span>
+            <span>
+                <p class="i i02"></p>
+                <p>物流快捷</p>
+            </span>
+            <span>
+                <p class="i i03"></p>
+                <p>品质新鲜</p>
+            </span>
+        </div>
+        <div class="last">
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li ><a href="#">|</a></li>
+                <li><a href="#">帮助服务</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">售后服务</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">配送与验收</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">商务合作</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">搜索推荐</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">友情链接</a></li>
+            </ul>
+            <p class="copy">CopyRight @ 小兔鲜儿</p>
+        </div>
+    </nav>
+   
+</body>
+</html>

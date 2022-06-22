@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 256px;
+            height: 256px;
+            margin: 0 auto;
+            background-image: url("redhair.png");
+            animation: redh 1s steps(6) infinite;
+        }
+
+        /* 创建关键帧 */
+        @keyframes redh{
+            form{
+                background-position: 0 0;
+
+            }
+            to{
+                background-position: -1536px 0;    /*图片默认是平铺，重复的*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

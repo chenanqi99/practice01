@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            京东图片列表
+        </title>
+        <style>
+            .img-list{
+                width: 170px;
+                height: 425px;
+                margin: 50px auto;
+                background-color: rgb(215, 218, 189);
+                overflow: hidden;   /*-超过父元素的部分隐藏不显示*/
+                list-style: none;  /*去掉列表前面的点*/
+                padding: 0px;     /*去掉列表的内边距*/
+            }
+            .img-list img{
+                /* 图片宽度和列表的宽度一样 */
+                width: 100%;
+            }
+            .img-list li{
+                margin-bottom: 6px;
+            }
+        </style>
+      
+    </head>
+    <body>
+      <!-- 方法一
+        <div >
+            <img src="..\resource\01jd.png" alt="0元领取新人礼">
+        </div>
+        <div >
+            <img src="..\resource\02jd.png" alt="工业大牌精彩钜惠">
+        </div>
+        <div >
+            <img src="..\resource\03jd.png" alt="电视影音">
+        </div>
+         -->
+         <ul class="img-list">
+             <li>
+                 <!-- 图片链接 -->
+                 <a href="https://pro.jd.com/mall/active/3ezT1QLsWmuu8MPCmWEVUg46GNBA/index.html?babelChannel=ttt10">
+                     <img src="..\resource\01jd.jpg.webp" alt="京东1">
+                 </a>
+             </li>
+             <li>
+                <a href="https://pro.jd.com/mall/active/4P9a2T9osR9JvtzHVaYTPvsecRtg/index.html?babelChannel=ttt38">
+                    <img src="..\resource\02jd.jpg.webp" alt="京东2">
+                </a>
+            </li>
+            <li>
+                <a href="https://pro.jd.com/mall/active/3ezT1QLsWmuu8MPCmWEVUg46GNBA/index.html?babelChannel=ttt10">
+                    <img src="..\resource\03jd.png.webp" alt="京东3">
+                </a>
+            </li>
+         </ul>
+
+
+    </body>
+</html>

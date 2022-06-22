@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta>
+        <title>
+            网易新闻体育
+        </title>
+        <style>
+            .divout{
+                width: 300px;
+                height: 350px;
+                margin-top:100px;
+                margin-left:800px;
+                border-top: 1px solid rgb(245, 233, 233);
+                /* background-color: rgb(250, 247, 243); */
+            }
+            
+            .h2s{
+                /* 为了将块元素的宽和内容长度一样，有两种方法 */
+                width: fit-content;
+                /*第二种，转为行内块 display: inline-block; */
+
+                margin-left: 3px;
+                font-size: 18px;
+                margin-top: -1px;    /*将两个线重叠*/
+                /* line-height: 35px;   行高 */
+                /* align-items: center;    垂直居中 */
+                border-top:1px solid rgb(223, 106, 106) ;
+            }
+            .h2s a{
+                text-decoration: none;
+                color: #333;
+                
+            }
+            .h2s a:hover{
+                color: rgb(231, 107, 107);
+            }
+            .divin{
+                width: 300px;
+                height: 150px;
+                overflow: hidden;
+                transition: all 2s;
+                
+                position: relative;
+            }
+            .divin img{
+                cursor: pointer;
+                transition:2s;
+            }
+            .divin img:hover{
+                transform: scale(1.2);
+            }
+            ul li{
+                text-indent: -6px;
+                margin-bottom: 10px;
+            }
+            .divin p{
+                font-size: 16px;
+                font-family:SimSun;
+                font-weight:900;
+                color: #fff;
+                position: absolute;
+                bottom:0px;
+                left: 30px;
+            
+            }
+            .divin p>a{
+                text-decoration: none;
+                color:#fff;
+            }
+            ul{
+                margin: 0px;
+                padding:0px;
+                margin-left: 19px;
+                margin-top: 20px;
+                font-size: 14px;
+                text-indent: 0px;
+                list-style-position: outside;
+                list-style: square;
+            }
+          
+            li::marker{
+                color:rgb(214, 208, 208) ;
+                text-indent:none;
+                font-size: 5px;
+            }
+            li a{
+                text-decoration: none;
+                color:rgb(110, 110, 110)
+                
+            }
+          
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <div class="divout">
+            <h2 class="h2s">
+                <a href="https://sports.163.com/">体育</a>
+            </h2>
+            <div class="divin">
+                <img src="..\resource\wyxw.webp" alt="谷爱凌再发美图：吃饭、跑步+拍照">
+                <p><a href="https://www.asdxs.cn/98094.html">谷爱凌再发美图：吃饭、跑步+拍照</a></p>
+            </div>
+            <ul>
+                <li>
+                    <a href="https://www.163.com/sports/article/H3AMJCJL00058781.html">意大利足球脸都不要了!250天前还是欧洲冠军</a>
+                </li>
+                <li>
+                    <a href="https://www.163.com/sports/article/H3A7264O00058782.html">周冠宇里程碑之战闪耀 而艰险考研刚刚启程</a>
+                </li>
+                <li>
+                    <a href="https://www.163.com/sports/article/H39F9L0C00058780.html">国足颜面之战于大宝惊现散步式进攻 竟被裁</a>
+                </li>
+                <li>
+                    <a href="https://www.163.com/sports/article/H37TEE0D00058782.html">手握网坛史上最高金额冠军支票 女单NO.1告</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

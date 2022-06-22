@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- js代码写在script标签里 -->
+    <script src="./script1.js">
+        /*
+        控制浏览器弹出警告框
+        alert("这是第一个js代码");
+        */
+       /*计算机在页面中输出内容
+       document.write("这是一个内容...");  向body里写内容
+       */
+       /*
+       向控制台输出内容
+       console.log()    
+       */
+       
+    </script>
+</head>
+<body>
+    <!-- 可以将js代码编写到标签的onclick属性中 
+    当点击按钮时代码，JS代码才会执行
+
+
+    代码写在标签的属性中，属于结构与行为耦合，不方便维护，不推荐使用
+    可以将JS代码写在script标签里
+    可以写在.js文件中，在HTML通过script引入。写在外部文件中可以在不同页面中同时引用，也可以利用到浏览器中的缓存机制，推荐使用
+    script一旦引入外部文件，就不能再编写代码了，即使编写浏览器也会忽略
+    如果需要可以再创建一个新的script标签，按照从上到下执行
+    -->
+    <button onclick="alert('点点点')">点击</button>
+        <!-- 可以将js代码编写到标签的onclick属性中 
+    当点击按钮时代码，JS代码才会执行
+    -->
+    <a href="javascript:alert('超链接点击');">超链接</a>
+    <a href="javascript:;">超链接</a>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+/*网页的公共样式*/
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* 去除超链接下划线 */
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+    min-width: 1226px;   /*当窗口缩小到一定程度网页内容不再缩小*/
+}
+
+
+/*设置一个类，用来表示中间容器的宽度*/
+.w{
+    /*固定容易宽度*/
+    width: 1226px;
+    /* 设置容器居中 */
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+

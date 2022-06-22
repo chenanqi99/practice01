@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            w3school导航栏
+        </title>
+        <style>
+            .div1{
+                width: 1210px;
+                height: 48px;
+                margin: 0 auto;   /*水平居中*/
+                margin-top: 100px;
+                background-color: rgb(150, 150, 150,0.2);
+                
+
+            }
+            *{
+                /* 垂直居中 */
+                font-size:20px ;
+                height: 48px;
+                line-height: 48px;
+                text-align: center;
+                color: rgb(133, 130, 130);
+            }
+            .s1{
+                width: 167px;
+                float: left;
+            }
+            .s2{
+                width: 192px;
+                float: left;
+            }
+            .s3{
+                width: 177px;
+                float: left;
+            }
+            .s4{
+                width: 200px;
+                float: left;
+            }
+            .s5{
+                width: 115px;
+                float: left;
+            }
+            .s6{
+                width: 197px;
+                float: left;
+            }
+            .s7{
+                width: 161px ;
+                float: left;
+            }
+            div :not(.div1):hover{
+                /* 鼠标移入时背景颜色和字体颜色改变 */
+                background-color: rgb(36, 33, 33);
+                color: #E8E7E3;    
+            }
+            a{
+                /* 去除下划线 */
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            <a href="https://www.w3school.com.cn/p.asp"><div class="s1">HTML/CSS</div></a>
+            <a href="https://www.w3school.com.cn/p.asp"><div class="s2">Browser Side</div></a>
+            <a href="https://www.w3school.com.cn/p.asp"><div class="s3">Server Side</div></a>
+            <a href="https://www.w3school.com.cn/p.asp"><div class="s4">Programming</div></a>
+            <a href="https://www.w3school.com.cn/x.asp"><div class="s5">XML</div></a>
+            <a href="https://www.w3school.com.cn/w.asp"><div class="s6">Web Building</div></a>
+            <a href="https://www.w3school.com.cn/w.asp"><div class="s7">Reference</div></a>
+        </div>
+    </body>
+</html>
